@@ -23,22 +23,14 @@ h1{
     margin-bottom:40px;
 }
 
-.stack{
-    position:relative;
+.big{
     font-size:120px;
     font-weight:bold;
 }
 
-.stack div{
-    position:absolute;
-    left:0;
-    right:0;
-    opacity:0;
-}
-
-.stack .main{
-    position:relative;
-    opacity:1;
+/* hide wrapper text */
+.hidden{
+    font-size:0;
 }
 
 .evil{
@@ -50,13 +42,17 @@ h1{
 
 <body>
 
-<h1>are you gay?</h1>
+<h1>Are you gay?</h1>
 
-<div class="stack">
-    <div>acceptwhoyouare</div>
-    <div>weallknowurgay</div>
-    <div>itsokaytobegay</div>
-    <div class="main">Yes.</div>
+<div class="hidden">
+    acceptwhoyouare
+    <div class="hidden">
+        weallknowurgay
+        <div class="hidden">
+            itsokaytobegay
+            <div class="big">Yes.</div>
+        </div>
+    </div>
 </div>
 
 <script src="script.js"></script>
